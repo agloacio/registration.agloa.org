@@ -1,0 +1,8 @@
+<Project Sdk="Devsense.Php.Sdk">
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>52fc877b-8729-490c-a214-a5dd63ad078b</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Remove="*.tmp" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{13B669BE-BB05-4DDF-9536-439F39A36129}") = "registration.agloa.org", "registration.agloa.org.phpproj", "{52FC877B-8729-490C-A214-A5DD63AD078B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52FC877B-8729-490C-A214-A5DD63AD078B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FC877B-8729-490C-A214-A5DD63AD078B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FC877B-8729-490C-A214-A5DD63AD078B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FC877B-8729-490C-A214-A5DD63AD078B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8048046-BD73-4A8B-BDD0-9D787358EFEC}
+	EndGlobalSection
+EndGlobal

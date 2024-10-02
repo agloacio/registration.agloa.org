@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<menu>
+  <item>
+    <path>civicrm/tournament</path>
+    <title>Tournament Dashboard</title>
+    <page_callback>CRM_Tournament_Page_Tournament</page_callback>
+    <access_arguments>access CiviEvent</access_arguments>
+    <page_type>1</page_type>
+    <is_ssl>true</is_ssl>
+    <weight>1</weight>
+  </item>
+  <item>
+    <path>civicrm/tournament/manage</path>
+    <title>Manage Tournaments</title>
+    <page_callback>CRM_Tournament_Page_ManageEvent</page_callback>
+    <access_arguments>access CiviEvent</access_arguments>
+    <page_type>1</page_type>
+    <is_ssl>true</is_ssl>
+    <weight>2</weight>
+  </item>
+  <item>
+    <path>civicrm/tournament/user</path>
+    <page_callback>CRM_Tournament_Form_UserProfile</page_callback>
+    <title>Tournament User Profile</title>
+    <access_arguments>access CiviEvent</access_arguments>
+  </item>
+</menu>

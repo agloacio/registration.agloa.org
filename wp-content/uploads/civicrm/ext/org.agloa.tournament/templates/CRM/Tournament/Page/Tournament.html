@@ -1,0 +1,48 @@
+<h3>Tournament Dashboard</h3>
+
+Welcome, {$dashboard->contact.first_name}. The
+links on this page (and the <strong>Tournaments</strong> navigation menu above) will guide you through the steps of tournament registration.
+
+<ol>
+	<li>If you are new to this system, the first step is to <a href="/wp-admin/admin.php?page=CiviCRM&q=civicrm/tournament/user&contactId={$dashboard->contact.id}" target="_blank" title="double-check your contact information.">double-check your contact information</a>. You probably only need to do this once, ever.</li>
+
+	<li>The next step is to double-check your organization's contact information. You probably only need to do this once, ever.
+		<p>You are a contact for these organizations:</p>
+		<ol>
+			{foreach from=$dashboard->billingOrganizations item=billingOrganization}
+			<li>{$billingOrganization}</li>
+			{/foreach}
+		</ol>
+	</li>
+
+	<li>The next step is to enter contacts for your group(s). You probably only need to do this once per contact, ever.
+		<p>This only enters them into the database. It doesn't mean anyone is actually <em>committed</em> to attending a tournament. You can enter contacts at <em>any time</em> during the year. The only deadline for entering contacts is that a contact must be in the database <em>before</em> you can register that contact for a tournament.</p>
+        <p>You have access to contacts in these groups:</p>
+		<ol>
+			{foreach from=$dashboard->registrationGroups item=registrationGroup}
+			<li>{$registrationGroup}</li>
+            <ul>
+                <li><a target="_blank" title="Use this link to edit contacts in Detroit Edison PSA" href="https://agloa.org/civicrm/profile?reset=1&amp;force=1&amp;gid=117">List</a></li>
+                <li><a target="_blank" title="Use this link to add new contacts to Detroit Edison PSA" href="https://agloa.org/civicrm/profile/create?reset=1&amp;gid=117">Add New</a></li>
+            </ul>
+			{/foreach}
+		</ol>
+    </li>
+
+    <li>Once you have entered all the contacts for your group(s), you can register them to attend a tournament. (Be sure to indicate which competitions they will enter. That's important for the team registration step.)
+        <ul>
+            <li><a href="https://agloa.org/civicrm/participant/add?reset=1&amp;action=add&amp;context=standalone&amp;eid=9">Use this link
+                    to register a contact for the tournament</a>.</li>
+            <li><a href="https://agloa.org/civicrm/report/instance/25?reset=1">Use this link to list/edit contacts already registered for
+                    the tournament</a>.</li>
+        </ul>        
+        <strong>Note</strong>: Tournament registration will close at : 
+    </li>
+        
+    <li>Once you have registered all the players for your district/league, you can group them into teams.
+        <ul>
+            <li><a href="https://agloa.org/civicrm/tournament/team/add&amp;reset=1">Use this link to start a new team</a>.</li>
+            <li><a href="https://agloa.org/civicrm/tournament/team/search">Use this link to list/edit your teams</a>.</li>
+        </ul>    
+    </li>
+</ol>

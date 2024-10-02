@@ -1,0 +1,133 @@
+.boldgrid-control.tabs-control {
+	padding: 0 10px;
+
+	div.heading {
+		position: relative;
+
+		a {
+			position: absolute;
+			top: 0;
+			right: 0;
+			text-decoration: none;
+
+			span {
+				font-size: 25px;
+			}
+		}
+	}
+
+	> div {
+		padding: 10px;
+		border: 1px solid #ddd !important;
+		margin-bottom: 10px;
+
+		h3 {
+			margin-top: 0;
+		}
+	}
+
+	ul.ui-sortable {
+		li {
+			display: flex;
+			justify-content: space-around;
+			padding: 10px;
+			margin: 10px 0;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			align-items: center;
+			background-color: rgba(0, 0, 0, 0.1);
+
+			input[name='title'] {
+				flex-grow: 1;
+				margin: 0 10px;
+			}
+
+			span.dashicons {
+				border: 1px solid #ddd;
+				padding: 5px;
+				border-radius: 5px;
+
+				&.dashicons-plus {
+					vertical-align: middle;
+					padding-right: 5px;
+				}
+
+				&.dashicons-move {
+					cursor: move;
+					background-color: #135e96;
+					color: #fff;
+				}
+
+				&.dashicons-trash {
+					cursor: pointer;
+					background-color: #f00;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.bgc.buttonset {
+		display: flex;
+		flex-wrap: wrap;
+
+		.switch-label {
+			background: rgba(0, 0, 0, 0.1);
+			border: 1px rgba(0, 0, 0, 0.1);
+			color: #555d66;
+			margin: 0;
+			text-align: center;
+			padding: 0.5em 1em;
+			flex-grow: 1;
+			display: -ms-flexbox;
+			display: flex;
+			-ms-flex-align: center;
+			align-items: center;
+			-ms-flex-pack: center;
+			justify-content: center;
+			justify-items: center;
+			-ms-flex-line-pack: center;
+			align-content: center;
+			cursor: pointer;
+		}
+
+		.switch-input:checked + .switch-label {
+			background-color: #00a0d2;
+			color: rgba(255, 255, 255, 0.8);
+		}
+	}
+
+	.color-control {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		input {
+			display: none;
+		}
+
+		label.color-preview {
+			margin-top: 5px;
+
+			&::before {
+				left: -20px;
+				top: 4px;
+			}
+		}
+	}
+}
+
+.mce-content-body button.nav-link[contentEditable='false'][data-mce-selected] {
+	outline: none;
+}
+
+#boldgrid-instance-menu {
+	[data-action='menu-tabs'] .dashicons {
+		font-size: 28px;
+		height: 28px;
+		position: relative;
+		top: -2px;
+		left: -1.5px;
+	}
+}

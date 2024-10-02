@@ -1,0 +1,115 @@
+@media only screen and (min-width: 1200px) {
+	body[data-container='max-full-width'].single {
+		#main-wrapper.full-width {
+			.main {
+				.entry-content {
+					.boldgrid-tabs.boldgrid-section-wrap {
+						.boldgrid-section {
+							padding-left: 20px;
+							padding-right: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.full-width .entry-content .boldgrid-section-wrap.boldgrid-tabs {
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: -20px;
+	margin-right: -20px;
+
+	ul.nav.nav-tabs {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
+
+.boldgrid-tabs.boldgrid-section-wrap {
+	.boldgrid-section {
+		margin-top: 0px;
+
+		&.boldgrid-tabs-pane {
+			display: none !important;
+
+			&.active {
+				display: flex !important;
+			}
+		}
+	}
+
+	ul.nav.nav-tabs {
+		--tab-bg-color: none;
+		--tab-color: var(--color-1);
+		--active-tab-bg-color: none;
+		--active-tab-color: var(--color-1);
+		--tab-border-hovor-color: var(--color-3);
+		border-bottom: 1px solid var(--tab-border-hovor-color);
+		margin-top: 1rem;
+		margin-bottom: 2rem;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: row;
+		justify-content: center;
+
+		&.left-aligned {
+			justify-content: flex-start;
+		}
+
+		&.right-aligned {
+			justify-content: flex-end;
+		}
+
+		li {
+			padding: 0;
+			margin-bottom: -1px;
+			display: inline-block;
+			float: none;
+			margin-left: 1.5px;
+			margin-right: 1.5px;
+
+			&:first-of-type {
+				margin-left: 0;
+			}
+
+			&:last-of-type {
+				margin-right: 0;
+			}
+
+			button {
+				border: 1px solid transparent;
+				background-color: var(--tab-bg-color);
+				color: var(--tab-color);
+				font-size: 22px;
+				padding: 0.5rem 1rem;
+				border-top-left-radius: 0.25rem;
+				border-top-right-radius: 0.25rem;
+				float: none;
+				cursor: pointer;
+				&.active {
+					border-bottom-color: var(--active-tab-color);
+					border-bottom-width: 2px;
+					border-bottom-style: solid;
+					background-color: var(--active-tab-bg-color);
+					color: var(--active-tab-color);
+				}
+				&:hover,
+				&:active,
+				&:focus {
+					&:not(.active) {
+						border-top-width: 1px;
+						border-left-width: 1px;
+						border-right-width: 1px;
+						border-style: solid;
+						border-top-color: var(--tab-border-hovor-color);
+						border-left-color: var(--tab-border-hovor-color);
+						border-right-color: var(--tab-border-hovor-color);
+					}
+				}
+			}
+		}
+	}
+}
