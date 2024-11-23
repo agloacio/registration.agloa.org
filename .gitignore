@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/wp-content/uploads/civicrm/civicrm.settings.php
+/wp-content/uploads/civicrm/upload/version-msgs-cache.json
+/wp-content/uploads/civicrm/upload/.htaccess
